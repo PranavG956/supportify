@@ -11,7 +11,6 @@ export const initiate = async (amount, to_username, paymentform) => {
     let user = await User.findOne({name: to_username});
     const secret = user?.razor_secret;
 
-    console.log(process.env.RAZORPAY_KEY, process.env.RAZORPAY_SECRET);
     var instance = new Razorpay({ key_id: user.razor_id, key_secret: secret });
 
     // instance.orders.create({

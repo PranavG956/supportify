@@ -57,7 +57,6 @@ const PaymentsPage = ({username}) => {
     // let a = await initiate(amount, session?.username, paymentform);
     // let orderId = a.id;
     const pay = async (amount) => {
-        console.log("process ids", process.env.NEXT_PUBLIC_RAZORPAY_KEY, process.env.NEXT_PUBLIC_RAZORPAY_SECRET);
         let a = await initiate(amount, username, paymentform);
         console.log(a);
         let orderId = a.id;
