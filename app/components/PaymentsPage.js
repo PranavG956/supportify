@@ -122,7 +122,7 @@ const handlechange = (e) => {
                 {payments.slice(0,10).map((p,i)=> {
                     return <li key={i} className="flex items-center gap-3">
                     <img className="rounded-full w-10 h-10" src="https://i.pinimg.com/736x/7a/13/40/7a13407cd778b9da0a443eff81077688.jpg" alt="" />
-                    <div><span className="font-bold">{p.name}</span> donated <span className="font-bold">₹{p.amount}</span> with message <span className="font-semibold">"{p.message}"</span></div></li>
+                    <div><span className="font-bold">{p.name}</span> donated <span className="font-bold">₹{p.amount}</span> with message <span className="font-semibold">{p.message}</span></div></li>
                 })}
             </ul>
         </div>
